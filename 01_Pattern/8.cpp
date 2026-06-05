@@ -6,19 +6,19 @@ void PrintPattern(int n)
     for (int i = 0; i < n; i++)
     {
         // space
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0; j < i; j++)
         {
             cout << " ";
         }
 
         // star
-        for (int j = 0; j < 2*i+1; j++)
+        for (int j = 0; j < (2*n - (2*i + 1)); j++)
         {
             cout << "*";
         }
 
         // space
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0; j < i; j++)
         {
             cout << " ";
         }
@@ -30,7 +30,7 @@ void PrintPattern(int n)
 int main()
 {
     int n = 5;
-    PrintPattern(5);
+    PrintPattern(n);
 
     return 0;
 }
