@@ -3,13 +3,11 @@ using namespace std;
 
 void PrintPattern(int n)
 {
-    char ch = 'A';
-    int start = static_cast<int>(ch);
     for(int i = 0; i < n; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for(char ch = 'E' - i; ch <= 'E'; ch++)
         {
-            cout << static_cast<char>(start + j) << " " ;
+            cout << ch << " ";
         }
         cout << endl;
     }

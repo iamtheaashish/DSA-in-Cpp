@@ -5,11 +5,12 @@ void PrintPattern(int n)
 {
     char ch = 'A';
     int start = static_cast<int>(ch);
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < n; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (int j = start; j <= start + (n - i - 1) ; j++)
         {
-            cout << static_cast<char>(start + j) << " " ;
+            cout << static_cast<char>(j) << " " ;
+
         }
         cout << endl;
     }
