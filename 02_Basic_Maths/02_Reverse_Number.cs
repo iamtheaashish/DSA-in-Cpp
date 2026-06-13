@@ -1,4 +1,4 @@
-Console.WriteLine($"Count of digit is equal to {count(156)}.");
+Console.WriteLine($"\nCount of digit is equal to {count(7780)}.");
 
 int count(int n)
 {
@@ -6,7 +6,7 @@ int count(int n)
     while (n > 0)
     {
         int lastDigit = n % 10;
-        Console.WriteLine(lastDigit);
+        Console.Write(lastDigit);
         cnt++;
         n /= 10;
     }
