@@ -1,14 +1,12 @@
-Console.WriteLine($"\nCount of digit is equal to {count(7780)}.");
+int originalNumber = Convert.ToInt32(Console.ReadLine());
+int n = originalNumber;
+int revNumber = 0;
 
-int count(int n)
+while(n > 0)
 {
-    int cnt = 0;
-    while (n > 0)
-    {
-        int lastDigit = n % 10;
-        Console.Write(lastDigit);
-        cnt++;
-        n /= 10;
-    }
-    return cnt;
+    int lastDigit = n % 10;
+    revNumber = (revNumber * 10) + lastDigit;
+    n = n / 10;
 }
+
+Console.WriteLine(revNumber);
